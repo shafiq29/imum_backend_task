@@ -1,0 +1,19 @@
+{
+  "name": "nd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/translate": "^8.4.0",
+    "csv-parser": "^3.0.0",
+    "csvtojson": "^2.0.10",
+    "mysql": "^2.18.1",
+    "papaparse": "^5.4.1"
+  }
+}

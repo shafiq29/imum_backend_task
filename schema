@@ -1,0 +1,70 @@
+CREATE TABLE apo (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title CHAR(250),
+    manufacturer CHAR(100),
+    source CHAR(10),
+    source_id CHAR(250),
+    country_code CHAR(4),
+    barcode CHAR(250)
+);
+
+CREATE TABLE azt (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title CHAR(250),
+    manufacturer CHAR(100),
+    source CHAR(10),
+    source_id CHAR(250),
+    country_code CHAR(4),
+    barcode CHAR(250)
+);
+
+CREATE TABLE bnu (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title CHAR(250),
+    manufacturer CHAR(100),
+    source CHAR(10),
+    source_id CHAR(250),
+    country_code CHAR(4),
+    barcode CHAR(250)
+);
+
+CREATE TABLE cma (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title CHAR(250),
+    manufacturer CHAR(100),
+    source CHAR(10),
+    source_id CHAR(250),
+    country_code CHAR(4),
+    barcode CHAR(250)
+);
+
+CREATE TABLE gin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title CHAR(250),
+    manufacturer CHAR(100),
+    source CHAR(10),
+    source_id CHAR(250),
+    country_code CHAR(4),
+    barcode CHAR(250)
+);
+
+CREATE TABLE ntn (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title CHAR(250),
+    manufacturer CHAR(100),
+    source CHAR(10),
+    source_id CHAR(250),
+    country_code CHAR(4),
+    barcode CHAR(250)
+);
+
+
+CREATE TABLE matches (
+    id CHAR(250),
+    m_source CHAR(250),
+    m_country_code CHAR(10),
+    c_country_code CHAR(10),
+    m_source_id CHAR(250),
+    c_source_id CHAR(250),
+    validation_status CHAR(50)
+);

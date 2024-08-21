@@ -1,0 +1,56 @@
+//unique counts
+SELECT 
+    SUBSTRING_INDEX(title, ' ', 1) AS first_word,
+    COUNT(*) AS count
+FROM 
+    azt
+GROUP BY 
+    first_word
+
+
+    SELECT 
+    SUBSTRING_INDEX(title, ' ', 1) AS first_word,
+    COUNT(*) AS count
+FROM 
+    azt
+WHERE 
+    manufacturer = ''
+GROUP BY 
+    first_word
+HAVING 
+    COUNT(*) > 1;
+
+
+
+
+// match table and prod match SELECT 
+    
+    t2.title,t2.manufacturer as azt_man,t2.barcode as azt_bar, 
+    t3.title,t3.manufacturer as cma_man, t3.barcode as cma_bar
+FROM 
+    matches t1
+JOIN 
+    azt t2 ON t1.m_source_id = t2.source_id
+JOIN 
+    cma t3 ON t1.c_source_id = t3.source_id
+where t3.manufacturer!=''
+
+
+find out the list of related manufacturer
+select
+  t2.title,t2.manufacturer as azt_man,t4.manufacturer as gin_man,t2.barcode as azt_bar,t4.barcode as gin_bar, 
+    t3.m_source_id,t3.c_source,t3.m_source_id,
+t4.title
+FROM 
+    matches t3
+JOIN 
+    azt t2 ON t2.source_id = t3.m_source_id
+join gin t4 on t4.source_id= t3.c_source_id
+
+where t2.manufacturer!=''
+
+
+installation 
+
+npm i fs, papaparse, csvtojson,mysql 
+docker compose up -d
